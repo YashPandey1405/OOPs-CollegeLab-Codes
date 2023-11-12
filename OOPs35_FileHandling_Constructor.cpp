@@ -13,10 +13,12 @@ int main(){
     for(int i=0;i<5;i++){
         output<<Bio[i]<<endl;
     }
+    output.close();  // Good Practice To Close The File After Use.......
     ifstream input("Temp35.txt");  //ifstream Is Inbuilt Class In Header File->"fstream"........
     for(int i=0;i<5;i++){
         getline(input,Intro[i]);
         cout<<Intro[i]<<endl;
     }
+    input.close();   // Good Practice To Close The File After Use.......
     return 0;
 }
